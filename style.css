@@ -1,0 +1,137 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:lightblue;
+}
+
+.nav-content {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(36,34,38);
+}
+.header-content{
+    display: flex;
+    padding: 5%;
+}
+.navbarrightpart ul {
+    float: right;
+    list-style-type: none;
+}
+
+.navbarrightpart ul li {
+    display: inline-block;
+    line-height: 20px;
+    
+}
+.headersocialicon a{
+    margin: 4%;
+}
+.navbarrightpart ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 30px;
+    transition: all 0.3s ease;
+}
+
+.navbarrightpart ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbarrightlink:hover {
+    background-color: rgb(36, 211, 187);
+    border: 1px;
+}
+.headerrightpart {
+    margin-left: 70ch;
+    padding :13px 12px;
+    margin-bottom: 12ch;
+}
+.about-content{
+    display: flex;
+    padding: 5%;
+}
+.aboutrightpart{
+    margin-left: 50ch;
+    padding: 30px 40px;
+}
+.aboutrightpart a{
+    border-radius:10px;
+    background-color : rgb(10, 9, 10);
+    padding: 5px 10px;
+    color: white;
+}
+.about h1{
+    text-align: center;
+}
+.Education{
+    text-align: center;
+
+}
+.Bachelore{
+    background-color: rgb(10, 9, 10);
+    padding:7px 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white
+}
+.Intermediate{
+    background-color:  rgb(10, 9, 10);
+    padding:7px 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white
+}
+.highschool{
+    background-color: rgb(10, 9, 10);
+    padding:7px 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white
+}
+.Poject-content{
+    display: flex;
+    padding: 5%;
+    }
+.project h1{
+text-align: center
+;}
+.projectskills{
+    display: flex;
+}
+.projectskills  p{
+    text-align: center;
+    background-color: rgb(10, 9, 10);
+    padding-top:3%;
+    height:30px;
+    width:100px;
+    margin-left:95px;
+    color: white
+}
+.project  p{
+    text-align: center;
+    background-color: rgb(10, 9, 10);
+    padding-top:3%;
+    height:70px;
+    width:100px;
+    margin-left:100px;
+    color: white
+}
+.contact-content{
+    margin: 4%;
+}
+.contact-content h1{
+    text-align: center;
+    
+}
+.contactrightpart{
+        margin-left: 50ch;
+        padding: 30px 40px;
+}
+.projectrightpart{
+    margin-left: 50ch;
+    padding: 30px 40px;
+    margin-bottom: 50ch;
+
+}
