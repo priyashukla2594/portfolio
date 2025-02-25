@@ -1,19 +1,21 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:lightblue;
+    background-color: rgb(255, 255, 255);
+    margin: 0px
 }
 
 .nav-content {
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(36,34,38);
+    background-color: rgb(2, 3, 8);
 }
-.header-content{
+
+.header-content {
     display: flex;
     padding: 5%;
 }
+
 .navbarrightpart ul {
     float: right;
     list-style-type: none;
@@ -21,18 +23,27 @@ body {
 
 .navbarrightpart ul li {
     display: inline-block;
-    line-height: 20px;
-    
+    line-height: 100%;
+
 }
-.headersocialicon a{
-    margin: 4%;
+
+.headersocialicon img {
+    margin: 0% 4% 4% 0%;
+    line-height: 1.6;
+
 }
+
+.headersocialicon {
+    display: flex;
+}
+
 .navbarrightpart ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    padding: 8px 30px;
+    padding: 10px 30px;
     transition: all 0.3s ease;
+
 }
 
 .navbarrightpart ul li a:hover {
@@ -43,95 +54,159 @@ body {
     background-color: rgb(36, 211, 187);
     border: 1px;
 }
+
 .headerrightpart {
     margin-left: 70ch;
-    padding :13px 12px;
+    padding: 13px 12px;
     margin-bottom: 12ch;
+    border-radius: 70%;
 }
-.about-content{
+
+.about-content {
     display: flex;
     padding: 5%;
 }
-.aboutrightpart{
-    margin-left: 50ch;
-    padding: 30px 40px;
+
+.aboutrightpart {
+    margin-left: 20%;
+    padding: 50px;
 }
-.aboutrightpart a{
-    border-radius:10px;
-    background-color : rgb(10, 9, 10);
+
+.aboutrightpart a {
+    border-radius: 10px;
+    background-color: rgb(10, 9, 10);
     padding: 5px 10px;
     color: white;
+
 }
-.about h1{
+
+.aboutleftpart img {
+    margin-left: 50px;
+
+}
+
+.aboutleftpart {
+    margin-left: 10%;
+}
+
+.about h1 {
     text-align: center;
 }
-.Education{
+
+.education {
     text-align: center;
 
 }
-.Bachelore{
+
+.bachelore {
     background-color: rgb(10, 9, 10);
-    padding:7px 30px;
+    padding: 7px 30px;
     margin-left: 35%;
     margin-right: 35%;
     color: white
 }
-.Intermediate{
-    background-color:  rgb(10, 9, 10);
-    padding:7px 30px;
-    margin-left: 35%;
-    margin-right: 35%;
-    color: white
-}
-.highschool{
+
+.intermediate {
+
     background-color: rgb(10, 9, 10);
-    padding:7px 30px;
+    padding: 7px 30px;
     margin-left: 35%;
     margin-right: 35%;
     color: white
 }
-.Poject-content{
+
+.highschool {
+
+    background-color: rgb(10, 9, 10);
+    padding: 7px 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white
+}
+
+.Poject-content {
     display: flex;
     padding: 5%;
-    }
-.project h1{
-text-align: center
-;}
-.projectskills{
+}
+
+.project h1 {
+    text-align: center;
+}
+
+.projectskills {
     display: flex;
 }
-.projectskills  p{
-    text-align: center;
-    background-color: rgb(10, 9, 10);
-    padding-top:3%;
-    height:30px;
-    width:100px;
-    margin-left:95px;
-    color: white
+
+.projectskills p {
+    padding: 22%;
+    background-color: black;
+    color: white;
+    margin-left: 3%;
+    padding: 2px;
+
 }
-.project  p{
-    text-align: center;
-    background-color: rgb(10, 9, 10);
-    padding-top:3%;
-    height:70px;
-    width:100px;
-    margin-left:100px;
-    color: white
-}
-.contact-content{
+
+.contact-content {
     margin: 4%;
 }
-.contact-content h1{
+
+.contact-content h1 {
     text-align: center;
-    
+
 }
-.contactrightpart{
-        margin-left: 50ch;
-        padding: 30px 40px;
-}
-.projectrightpart{
+
+.contactrightpart {
     margin-left: 50ch;
     padding: 30px 40px;
-    margin-bottom: 50ch;
+}
 
+.projectrightpart {
+    margin-left: 20%;
+    padding: 50px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.projectleftpart {
+    margin-left: 10%;
+}
+
+.project-content {
+    display: flex;
+    padding: 5%;
+
+}
+
+.projectrightpart p {
+    padding: 2px 3px;
+}
+
+.contact-content {
+    display: flex;
+}
+
+.contactsocialicon a {
+    margin: 4%;
+}
+
+.contact {
+    text-align: center;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 8px 40px;
+    background-color: black;
+    color: white;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skillicon img {
+    padding-inline: 20px;
+    height: 50%;
+    padding: 10px 20px;
 }
