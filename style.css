@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(168, 165, 165);
+    background-color:white;
     margin: 0px
 }
 
@@ -62,10 +62,16 @@ body {
 }
 
 .headerrightpart {
-    margin-left: 70ch;
+    margin-left: 40ch;
     padding: 13px 12px;
     margin-bottom: 12ch;
     border-radius: 70%;
+}
+.headerleft{
+    margin-left: 15%;
+}
+.headerleft h1{
+    font-size: 20px;
 }
 
 .about-content {
@@ -74,7 +80,7 @@ body {
 }
 
 .aboutrightpart {
-    margin-left: 20%;
+    margin-right: 30%;
     padding: 50px;
 }
 
@@ -103,14 +109,15 @@ body {
 .education {
     text-align: center;
     color: rgb(1, 8, 39);
-
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .bachelore {
     background-color: rgb(1, 8, 39);
     padding: 7px 30px;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 17%;
+    margin-right: 5%;
     color: white
 }
 
@@ -118,8 +125,7 @@ body {
 
     background-color: rgb(1, 8, 39);
     padding: 7px 30px;
-    margin-left: 35%;
-    margin-right: 35%;
+     margin-right: 5%;
     color: white
 }
 
@@ -127,8 +133,7 @@ body {
 
     background-color: rgb(1, 8, 39);
     padding: 7px 30px;
-    margin-left: 35%;
-    margin-right: 35%;
+    
     color: white
 }
 
@@ -170,7 +175,8 @@ body {
 }
 
 .projectrightpart {
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 10%;
     padding: 50px;
     line-height: 1.6;
     word-wrap: break-word;
@@ -215,16 +221,28 @@ body {
     background-color: darkslategray;
     color: white;
 }
-
-.skill {
-    text-align: center;
+.skillsicon {
+  display: flex;               
+  justify-content: center; 
+  align-items: center;       
+  gap: 20px;                   
+  flex-wrap: wrap;
+            
+}
+.skills  h2{
+  text-align: center;         
 }
 
-.skillicon img {
-    padding-inline: 20px;
-    height: 50%;
-    padding: 10px 20px;
+.skillsicon img {
+  width: 60px;                
+  height: 70px;              
+  object-fit: contain;         
+  transition: transform 0.2s ease;
 }
+.skillsicon img:hover {
+  transform: scale(1.1);      
+}
+
 .headerleftpart h2{
     margin-left: 30ch;
 margin-top: 15%;
@@ -262,4 +280,20 @@ border-radius: 6px;
 }
 .headerrightpart img{
     border-radius: 100%;
+}
+.about h1{
+    font-size: 20px;
+}
+.Education h1{
+     font-size: 20px;
+     text-align: center;
+}
+.education{
+    display: flex;
+}
+.projects h1{
+    font-size: 20px;
+}
+.headerleftpart h1{
+    font-size: 20px;
 }
