@@ -1,167 +1,331 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priya Shukla — Software Developer</title>
+  <meta name="description" content="Portfolio of Priya Shukla, a software developer building clean, modern web applications." />
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png">
+  <!-- Navbar -->
+  <header class="nav" id="home">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <img src="image/logo.png" alt="Priya Shukla logo" />
+      </a>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-querise.css ">
-    <title>Portfolio website</title>
-  </head>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
 
-  <body><!--navbar-->
-    <section class="nav-content">
-      <div class="navbarleftlink">
-        <img src="image/logo.png">
-      </div>
       <nav>
-        <div class="navbarrightpart">
-          <ul>
-            <li> <a class="navbarrightlink" href="#home">Home</a></li>
-            <li> <a class="navbarrightlink" href="#about">About</a></li>
-            <li> <a class="navbarrightlink" href="#education">Education</a></li>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <li><a class="navbarrightlink" href="#projects">Projects</a></li>
-            <li><a class="navbarrightlink" href="#contact">Contact</a></li>
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Hey folks</p>
+          <h1>I'm Priya Shukla</h1>
+          <p class="hero-role">Software Developer</p>
+          <div class="hero-actions">
+            <a href="assets/resume/priya_resume.pdf" target="_blank" rel="noopener" class="btn">
+              Download resume
+            </a>
+            <a href="#contact" class="btn">Get in touch</a>
+          </div>
+
+          <ul class="social">
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-linkedin">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-github">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.hackerrank.com/" target="_blank" rel="noopener" aria-label="HackerRank" class="social-hackerrank">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12-.645 1.115-9.107 6-10.392 6-1.282 0-9.747-4.885-10.391-6-.643-1.115-.643-10.885 0-12C2.253 4.886 10.718 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.991h.701c.141 0 .258-.115.258-.258 0-.094-.049-.176-.123-.221l-1.577-1.498c-.049-.063-.141-.109-.225-.109s-.16.045-.207.107l-1.68 1.511c-.072.045-.121.127-.121.221 0 .142.115.258.256.258h.703l.006 10.035c0 .142.115.258.258.258h1.494c.141 0 .258-.115.258-.258v-4.004h4.075v4.152h-.703c-.141 0-.258.115-.258.258 0 .094.049.176.121.219l1.578 1.5c.049.062.141.109.225.109.084 0 .16-.045.209-.109l1.68-1.5c.07-.045.119-.125.119-.219 0-.143-.115-.258-.258-.258h-.703l-.006-10.034c0-.143-.115-.26-.258-.26h-1.494z"/></svg>
+              </a>
+            </li>
           </ul>
         </div>
-      </nav>
-      </div>
 
-
-    </section>
-    <!--homepage-->
-    <section class="header-content">
-      <div class="headerleft">
-        <h3>Hello !!</h3>
-        <h1>I'm Priya shukla</h1>
-        <p><b>Software developer</b></p><br>
-        <p><b>Email</b>: <i><a href="mailto:priyashukla2594@gmail.com">priyashukla2594@gmail.com</a> </i></p>
-        <p><b>Mobile</b>: <i>9236348986</i></p>
-        <p><b>Address</b>: <i>Kanpur nagar, up, india</i></p>
-
-        <div class="headersocialicon">
-          <image src="assets/img/linkedin.svg">
-            <image src="assets/img/Hacker_Rank.svg">
-              <image src="assets/img/gitub_svg.svg">
+        <div class="hero-photo">
+          <img src="assets/img/priya_photo2.png" alt="Portrait of Priya Shukla" />
         </div>
       </div>
-      <div class="headerrightpart">
-        <img width="280"  src="assets/img/priya_photo2.png">
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">About</p>
+          <h2>A bit about me</h2>
+        </header>
+
+        <div class="about-body">
+          <p>
+            I'm a software developer focused on building scalable web applications across frontend and backend systems. I work with JavaScript, React.js, Node.js, Java, and SQL databases to build reliable, user-focused products. I've developed systems like Employee Leave Management and College ERP platforms, handling REST APIs, authentication, dashboards, database optimization, and responsive UI development. I enjoy solving real-world engineering problems and building maintainable software.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <article class="about-card">
+            <p class="about-card-label">Working On</p>
+            <p class="about-card-text">Building scalable full-stack web applications with React.js, Node.js, and REST APIs.</p>
+          </article>
+          <article class="about-card">
+            <p class="about-card-label">Learning</p>
+            <p class="about-card-text">Improving backend architecture, system design, and performance optimization skills.</p>
+          </article>
+          <article class="about-card">
+            <p class="about-card-label">Open To</p>
+            <p class="about-card-text">Developer opportunities, collaborative projects, and solving real-world engineering problems.</p>
+          </article>
+        </div>
       </div>
     </section>
-    <!-- about part-->
-    <div class="about" id="about">
-      <h1>ABOUT</h1>
+
+    <!-- Education -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Education</p>
+          <h2>Where I've studied</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Bachelor of computer applications (BCA)</h3>
+            <p class="card-meta">2025</p>
+            <p>Axis Colleges, Kanpur</p>
+          </article>
+
+          <article class="card">
+            <h3>Intermediate (12th)</h3>
+            <p class="card-meta">2022</p>
+            <p>Kanpur</p>
+          </article>
+
+          <article class="card">
+            <h3>High school (10th)</h3>
+            <p class="card-meta">2020</p>
+            <p>Kanpur</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Skills</p>
+          <h2>Tools I work with</h2>
+        </header>
+
+        <ul class="skills-grid">
+          <li><img src="assets/img/html1.svg" alt="HTML" /><span>HTML</span></li>
+          <li><img src="assets/img/css1.svg" alt="CSS" /><span>CSS</span></li>
+          <li><img src="assets/img/js_logo.png" alt="JavaScript" /><span>JavaScript</span></li>
+          <li><img src="assets/img/reactJs_logo.png" alt="React" /><span>React</span></li>
+          <li><img src="assets/img/java1.svg" alt="Java" /><span>Java</span></li>
+          <li><img src="assets/img/sql.svg" alt="SQL" /><span>SQL</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Projects</p>
+          <h2>Things I've built</h2>
+        </header>
+
+        <div class="slider" id="projects-slider">
+          <button class="slider-btn slider-prev" type="button" aria-label="Previous project">&#8249;</button>
+
+          <div class="slider-viewport">
+            <ul class="slider-track">
+              <li class="slide">
+                <article class="project">
+                  <div class="project-thumb">
+                    <img src="assets/img/priya_photo2.png" alt="Portfolio website preview" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Portfolio website</h3>
+                    <ul class="tags">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                    <p>
+                      Personal portfolio built with plain HTML, CSS, and JavaScript. Features a responsive layout, auto-playing project slider, and a clean design system.
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="slide">
+                <article class="project">
+                  <div class="project-thumb">
+                    <img src="assets/img/reactJs_logo.png" alt="Todo app preview" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Todo app</h3>
+                    <ul class="tags">
+                      <li>React</li>
+                      <li>Hooks</li>
+                      <li>LocalStorage</li>
+                    </ul>
+                    <p>
+                      React-based task manager with localStorage persistence. Includes filtering and edit support. Built to practice hooks and component composition.
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="slide">
+                <article class="project">
+                  <div class="project-thumb">
+                    <img src="assets/img/js_logo.png" alt="Weather dashboard preview" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Weather dashboard</h3>
+                    <ul class="tags">
+                      <li>JavaScript</li>
+                      <li>API</li>
+                      <li>CSS</li>
+                    </ul>
+                    <p>
+                      Weather dashboard that fetches live forecasts from a public API. Built with vanilla JavaScript, handling async requests, loading states, and errors.
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="slide">
+                <article class="project">
+                  <div class="project-thumb">
+                    <img src="assets/img/js_logo.png" alt="Calculator preview" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Calculator</h3>
+                    <ul class="tags">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                    <p>
+                      Working calculator built with vanilla JavaScript. Supports keyboard input, decimal handling, and a responsive layout that adapts to mobile screens.
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <button class="slider-btn slider-next" type="button" aria-label="Next project">&#8250;</button>
+
+          <div class="slider-dots" role="tablist" aria-label="Project slides"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Contact</p>
+          <h2>Get in touch</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Email</strong><br><a href="mailto:priyashukla2594@gmail.com">priyashukla2594@gmail.com</a></p>
+            <p><strong>Mobile</strong><br>+91 92363 48986</p>
+            <p><strong>Address</strong><br>Kanpur, Uttar Pradesh, India - 208021</p>
+
+            <ul class="social social-dark">
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-linkedin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+              <li><a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-github"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></li>
+              <li><a href="https://www.hackerrank.com/" target="_blank" rel="noopener" aria-label="HackerRank" class="social-hackerrank"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12-.645 1.115-9.107 6-10.392 6-1.282 0-9.747-4.885-10.391-6-.643-1.115-.643-10.885 0-12C2.253 4.886 10.718 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.991h.701c.141 0 .258-.115.258-.258 0-.094-.049-.176-.123-.221l-1.577-1.498c-.049-.063-.141-.109-.225-.109s-.16.045-.207.107l-1.68 1.511c-.072.045-.121.127-.121.221 0 .142.115.258.256.258h.703l.006 10.035c0 .142.115.258.258.258h1.494c.141 0 .258-.115.258-.258v-4.004h4.075v4.152h-.703c-.141 0-.258.115-.258.258 0 .094.049.176.121.219l1.578 1.5c.049.062.141.109.225.109.084 0 .16-.045.209-.109l1.68-1.5c.07-.045.119-.125.119-.219 0-.143-.115-.258-.258-.258h-.703l-.006-10.034c0-.143-.115-.26-.258-.26h-1.494z"/></svg></a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <label>
+              <span>Your name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Your email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Your message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        <p>&copy; <span id="year"></span> Priya Shukla. All rights reserved.</p>
+        <p><a href="https://priya.rohitshukla.net">priya.rohitshukla.net</a></p>
+      </div>
+
+      <ul class="social social-footer">
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-linkedin">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-github">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hackerrank.com/" target="_blank" rel="noopener" aria-label="HackerRank" class="social-hackerrank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12-.645 1.115-9.107 6-10.392 6-1.282 0-9.747-4.885-10.391-6-.643-1.115-.643-10.885 0-12C2.253 4.886 10.718 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.991h.701c.141 0 .258-.115.258-.258 0-.094-.049-.176-.123-.221l-1.577-1.498c-.049-.063-.141-.109-.225-.109s-.16.045-.207.107l-1.68 1.511c-.072.045-.121.127-.121.221 0 .142.115.258.256.258h.703l.006 10.035c0 .142.115.258.258.258h1.494c.141 0 .258-.115.258-.258v-4.004h4.075v4.152h-.703c-.141 0-.258.115-.258.258 0 .094.049.176.121.219l1.578 1.5c.049.062.141.109.225.109.084 0 .16-.045.209-.109l1.68-1.5c.07-.045.119-.125.119-.219 0-.143-.115-.258-.258-.258h-.703l-.006-10.034c0-.143-.115-.26-.258-.26h-1.494z"/></svg>
+          </a>
+        </li>
+      </ul>
     </div>
-    <section class="about-content">
-      <div class="aboutleftpart">
-        <img width="300" height="300" src="https://info.rohitshukla.net/images/project/about-us.png">
-      </div>
-      <div class="projectrightpart">
-        <p>Hello! I am priya shukla ,a passionate Software developer with a strong foundation in specific programming
-          language or technologies e.g, Html,Css,Javascript, Python React,etc.i have honed my skill in desiging
-          developing, and maintaining high-quality, developing,and mainaining high-quality software application </p>
+  </footer>
 
-        <div class="resume">
-          <a target="_blank" href="assets/resume/priya_resume.pdf" class="btn custom-btn custom-btn-bg custom-btn-link"><i class="fa fa-download mr-1"></i>
-            Download Resume </a>
-        </div>
-
-      </div>
-    </section>
-    <!--education part-->
-     <div class="Education">
-        <h1> EDUCATION</h1>
-      </div>
-    <section class="education" id="education">
-      <div class="bachelore">
-        <h4>Bachelore of computer application</h4>
-        <p>2022-2025</p>
-        <p>Axis colleges,rooma kanpur</p>
-      </div><br>
-      <div class="intermediate">
-        <h4>Intermediate[12th]</h4>
-        <p>2022</p>
-        <p> Sanigawan road,kanpur
-        </p>
-      </div><br>
-      <div class="highschool">
-        <h4>High School [10th]</h4>
-        <p>2020</p>
-        <p>Sanigawan road,kanpur
-        </p>
-      </div>
-      </div><br><br>
-    </section><!--project part-->
-    <div class="projects" id="projects">
-      <h1> PROJECT</h1>
-    </div>
-    <!--project-->
-    <section class="project-content">
-      <div class="projectleftpart">
-        <img width="300" height="300" src="https://info.rohitshukla.net/images/project/about-us.png">
-      </div>
-      <div class="projectrightpart">
-        <h3> Portfolio Website</h3>
-        <div class="projectskills">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>REACT JS</p>
-        </div>
-        <p>I have created this beautiful portfolio website. A portfolio website is a unique platform that allows us to
-          showcase our work and share information about ourselves. It's like an online business card or CV that can help
-          us find partnerships, highlight our work, and even land our first job. Portfolio websites are commonly used by
-          job seekers in creative fields.</p>
-      </div>
-    </section>
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skillsicon">
-        <img
-          src="assets/img/html1.svg">
-
-        <img
-          src="assets/img/css1.svg">
-        <img
-          src="assets/img/js_logo.png">
-        <img
-          src="assets/img/reactJs_logo.png">
-          <img 
-          src="assets/img/java1.svg">
-          <img
-          src="assets/img/node1.svg">
-          <img
-          src="assets/img/sql.svg">
-      </div>
-    </section
-    
-    <!--contact-->
-  
-      <section class="contact-section">
-    <h2>GET IN TOUCH</h2>
-    <form action="#" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required><br>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-    
-        <script>
-          function submitAction() {
-            alert("wait!");
-            console.log("Performing custom action...");
-
-          }
-        </script>
-<footer class="footer">
-  <p>copyright@
-  <a href="https://priya.rohitshukla.net" >priya.rohitshukla.net</a> All right reserved</p>
-</footer>
-
-  </body>
-
-  </html>
+  <script src="script.js"></script>
+</body>
+</html>
