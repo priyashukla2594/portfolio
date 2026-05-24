@@ -88,6 +88,52 @@ p { margin: 0 0 1rem; }
 }
 
 /* =========================
+   Shared utilities
+   ========================= */
+
+/* Small uppercase accent labels */
+.eyebrow,
+.kicker,
+.about-card-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin: 0 0 8px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+
+.about-card-label {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+}
+
+/* Card base + lift-on-hover (shared by Education cards, About cards, Skill tiles) */
+.card,
+.about-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover,
+.about-card:hover,
+.skills-grid li:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover,
+.about-card:hover {
+  border-color: transparent;
+}
+
+/* =========================
    Navbar
    ========================= */
 .nav {
@@ -201,15 +247,6 @@ p { margin: 0 0 1rem; }
   grid-template-columns: 1.2fr 1fr;
   gap: 64px;
   align-items: center;
-}
-
-.eyebrow {
-  font-size: var(--fs-sm);
-  color: var(--accent);
-  font-weight: 600;
-  margin: 0 0 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .hero-text h1 {
@@ -338,23 +375,6 @@ p { margin: 0 0 1rem; }
 .social-github:hover { color: #181717; }
 .social-hackerrank:hover { color: #00ea64; }
 
-/* Footer variant: dark background, lighter defaults, white GitHub on hover.
-   Scoped with .footer so these beat the page footer's generic `.footer a` rules. */
-.footer .social-footer a {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.18);
-  color: #cbd5e1;
-}
-
-.footer .social-footer a:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: none;
-}
-
-.footer .social-footer .social-linkedin:hover { color: #0a66c2; }
-.footer .social-footer .social-github:hover { color: #ffffff; }
-.footer .social-footer .social-hackerrank:hover { color: #00ea64; }
-
 /* =========================
    Section shell
    ========================= */
@@ -371,15 +391,6 @@ p { margin: 0 0 1rem; }
 .section-head {
   text-align: center;
   margin-bottom: 48px;
-}
-
-.kicker {
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 8px;
 }
 
 /* =========================
@@ -401,35 +412,13 @@ p { margin: 0 0 1rem; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 56px;
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 56px auto 0;
 }
 
 .about-card {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px;
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: transparent;
-}
-
-.about-card-label {
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 8px;
 }
 
 .about-card-text {
@@ -450,16 +439,6 @@ p { margin: 0 0 1rem; }
 
 .card {
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: transparent;
 }
 
 .card h3 {
@@ -501,11 +480,6 @@ p { margin: 0 0 1rem; }
   align-items: center;
   gap: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skills-grid li:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
 }
 
 .skills-grid img {
@@ -704,11 +678,11 @@ p { margin: 0 0 1rem; }
   margin-bottom: 4px;
 }
 
-.contact-info a {
+.contact-info p a {
   color: var(--text);
 }
 
-.contact-info a:hover {
+.contact-info p a:hover {
   color: var(--accent);
 }
 
