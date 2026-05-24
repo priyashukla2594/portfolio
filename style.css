@@ -786,13 +786,8 @@ p { margin: 0 0 1rem; }
     text-align: center;
   }
 
-  .hero-intro {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .hero-actions,
-  .social {
+  .hero .social {
     justify-content: center;
   }
 
@@ -825,8 +820,8 @@ p { margin: 0 0 1rem; }
     grid-template-columns: 1fr;
   }
 
-  .project-thumb {
-    aspect-ratio: 16 / 9;
+  .project-thumb img {
+    height: auto;
   }
 
   .slider {
@@ -842,10 +837,17 @@ p { margin: 0 0 1rem; }
 @media (max-width: 720px) {
   :root {
     --section-pad: 56px;
+    --fs-hero: 2.25rem;
   }
 
   .nav-toggle {
     display: block;
+    margin-left: auto;
+  }
+
+  /* Let toggle pin flush right by removing the <nav> wrapper from flex flow */
+  .nav-inner > nav {
+    display: contents;
   }
 
   .nav-menu {
